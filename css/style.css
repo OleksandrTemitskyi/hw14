@@ -1,0 +1,430 @@
+@import url("reset.css");
+
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('../fonts/ArchitectsDaughter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* GLOBAL */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: #d8d8d8;
+    color: #161616;
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* gap: 20px; */
+}
+
+h1 {
+    font-family: Architects Daughter;
+    font-size: 36px;
+}
+
+/* HEADER */
+
+.header {
+    background: #81a368;
+    padding: 21px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 30px;
+}
+
+.header-list a {
+    color: #161616;
+    text-decoration: none;
+}
+
+.active {
+}
+
+
+/* MAIN */
+
+.flowers-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.fl-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fl-inner {
+    flex: 1 1 45%;
+}
+
+.fl-image {
+    flex: 1 1 45%;
+}
+
+
+
+.btn {
+    display: flex;
+    margin: 20px 0;
+    gap: 23px;
+}
+
+.first {
+    border-radius: 6px;
+    padding: 18px 34px 21px;
+    background: #81a368;
+}
+
+.two {
+    border-radius: 6px;
+    border: 1px solid #81a368;
+    padding: 18px 34px 21px;
+    background: #d8d8d8;
+}
+
+.about-inner {
+    margin: 204px auto;
+    text-align: center;
+    max-width: 570px;
+}
+
+.about-us {
+    padding: 50px 0;
+}
+
+/* MIDDLE */
+
+
+.middle {
+    background: #81a368;
+}
+
+
+.md-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 78px 0;
+    text-align: center;
+}
+
+.md-item li {
+    padding-top: 100px;
+	background-image: url('../image/card-1.png');
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+}
+
+.md-item li:nth-child(2) {
+	background-image: url('../image/card-2.png');
+}
+.md-item li:nth-child(3) {
+	background-image: url('../image/card-3.png');
+}
+.md-item li:nth-child(4) {
+	background-image: url('../image/card-4.png');
+}
+.md-item li:nth-child(5) {
+	background-image: url('../image/card-5.png');
+}
+
+
+
+/* WORKING */
+
+.working {
+    margin: 120px 0;
+}
+
+.container-work{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.test {
+    margin: 0 0 20px;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: Architects Daughter;
+    font-size: 32px;
+}
+
+.glass {
+    flex: 1 1 45%;
+}
+
+.are-working {
+    flex: 1 1 45%;
+}
+
+/* CARDS */
+
+.cards {
+    margin: 120px 0;
+}
+
+.container-cards {
+    text-align: center;
+}
+
+.card-inner {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    padding: 15px 15px 40px;
+    border-radius: 6px;
+    margin: 45px 0;
+    background: #81a368
+}
+
+.card img {
+    border-radius: 6px;
+    height: 402px;
+    width: 100%;
+    object-fit: cover;
+}
+
+h3 {
+    padding: 40px 0 0;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 50px 0;
+    background: #81a368;
+    color: #161616;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.messenger {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    color: #161616;
+}
+
+svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+/* MEDIA 1140 */
+
+@media (max-width:1140px) {
+    .flowers-cards, .container-work, .container-cards {
+        padding: 60px 15px;
+		position: relative;
+		justify-content: center;
+    }
+    .fl-inner, .glass, .our {
+        max-width: 500px;
+		text-align: justify;
+    }
+    .btn {
+        gap: 20px;
+		text-align: center;
+    }
+    .btn button {
+        flex: 1;
+        
+    }
+
+    .fl-inner + .fl-image, .glass {
+        position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		filter: blur(5px);
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .container {
+        padding: 60px 15px;
+    }
+    .md-item {
+        width: 100%;
+        height: 100%;
+    }
+    .messenger {
+
+    }
+
+
+}
+
+/* MEDIA 992 */
+@media (max-width: 992px) {
+	body {
+		line-height: 1;
+		font-size: 16px;
+	}
+	.header-logo img {
+		width: auto;
+		height: 18px;
+	}
+    .header-list {
+        gap: 20px;
+    }
+	.header-list {
+		gap: 15px;
+	}
+	/* AMELIA SECTION */
+	.fl-inner h1, h2, h3 {
+		font-weight: 500;
+		font-size: 42px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.about-inner {
+		padding: 60px 0;
+	}
+    .md-item {
+        padding: 40px 15px;
+    }
+}
+
+
+
+/* MEDIA 768 */
+
+@media (max-width:768px) {
+    .body {
+        font-size: 14px;
+    }
+    .header-list {
+        gap: 15px;
+    }
+    .about-inner {
+		padding: 40px 0;
+	}
+
+    .card-inner {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        padding: 40px 0;
+        flex-flow: column;
+    }
+}
+
+/* MEDIA 600 */
+
+@media (max-width:600px) {
+
+    .btn {
+        flex-flow: column;
+    }
+    .header-list {
+        display: none;
+    }
+    .header-container {
+        justify-content: center;
+    } 
+
+    .about-inner {
+		padding: 20px 0;
+	}
+
+    .md-item {
+        display: block;
+        padding: 20px 15px;
+    }
+
+    h4, li {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
